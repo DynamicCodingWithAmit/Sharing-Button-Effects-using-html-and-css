@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,#307af0,#4630f0);
+}
+.card{
+    width: 500px;
+    height: 300px;
+    background-color:#3093f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -10px -10px 15px rgba(0,0,0,0.2),
+    10px 10px 15px rgba(0,0,0,0.2);
+}
+.fab{
+    color:white;
+    font-size: 25px;
+    padding:10px;
+    margin:20px;
+}
+.fa-facebook{
+    background-color:#3b5998;
+}
+.fa-twitter{
+    background-color:#1da1f2;
+}
+.fa-whatsapp{
+    background-color:#25d366;
+}
+.SocialMedia{
+    width: 400px;
+    height: 200px;
+    background-color:rgba(255,255,255,0.5);
+    display: none;
+}
+.card:hover .SocialMedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 2s open;
+}
+@keyframes open{
+    from{
+        height: 0;
+    }
+    to{
+        height:200px;
+    }
+}
